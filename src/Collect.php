@@ -1,6 +1,6 @@
 <?php
 
-namespace Maks123m\Collect;
+namespace Collect;
 
 class Collect
 {

@@ -1,5 +1,5 @@
 <?php
-use Maks123m\Collect\Collect;
+namespace Collect;
 
 function collection(array $array = []): Collect
 {
