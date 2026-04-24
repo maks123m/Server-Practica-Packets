@@ -14,13 +14,12 @@
         "php": "^7.4 | ^8.0"
     },
     "autoload": {
-       "psr-4": {
-           "Src\\": "core/Src/"
-       },
+        "psr-4": {
+            "Maks123m\\Collect\\": "src/"
+        },
         "files": [
-            "src/helpers.php"
+            "helpers.php"
         ]
-
-   }
+    }
 
 }
