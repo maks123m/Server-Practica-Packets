@@ -1,0 +1,26 @@
+{
+    "name": "maks123m/collect",
+    "description": "Module for working with arrays",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maks123m",
+            "email": "maksmamix0@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+    "autoload": {
+       "psr-4": {
+           "Src\\": "core/Src/"
+       },
+        "files": [
+            "src/helpers.php"
+        ]
+
+   }
+
+}
