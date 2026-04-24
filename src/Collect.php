@@ -5,11 +5,21 @@ namespace Collect;
 class Collect
 {
    private array $array = [];
+   protected array $data;
 
    public function __construct(array $array = [])
    {
        $this->array = $array;
    }
+    public function filter(callable $callback): self
+    {
+        return new self(array_filter($this->data, $callback));
+    }
+
+   public function all(): array
+    {
+        return $this->data;
+    }
 
    public function get($key = null)
    {
@@ -31,10 +41,10 @@ class Collect
        return $this->array;
    }
 
-   public function map(callable $callback): Collect
-   {
-       return new self(array_map($callback, $this->array));
-   }
+    public function map(callable $callback): self
+    {
+        return new self(array_map($callback, $this->data));
+    }
 
    public function each(callable $callback, ...$args): Collect
    {
